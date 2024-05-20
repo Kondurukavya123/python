@@ -1,0 +1,24 @@
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+or
+def is_armstrong_number(number):
+    num_str = str(number)
+    power = len(num_str)
+    total_sum = 0
+    for digit in num_str:
+        total_sum += int(digit) ** power
+    return total_sum == number
+number = int(input("Enter a number: "))
+if is_armstrong_number(number):
+    print(f"{number} is an Armstrong number.")
+else:
+    print(f"{number} is not an Armstrong number.")
